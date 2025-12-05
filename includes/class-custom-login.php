@@ -1,8 +1,8 @@
 <?php
 if (!defined('ABSPATH')) exit;
 
-if (!class_exists('WPGP_Custom_Login')) {
-    class WPGP_Custom_Login {
+if (!class_exists('SG_Custom_Login')) {
+    class SG_Custom_Login {
         public function __construct() {
             add_action('init', [$this, 'init']);
             add_filter('site_url', [$this, 'filter_site_url'], 10, 4);
@@ -20,7 +20,7 @@ if (!class_exists('WPGP_Custom_Login')) {
         }
 
         public function get_slug() {
-            $opts = get_option('wpgp_options', []);
+            $opts = get_option('sg_options', []);
             return !empty($opts['custom_login_slug']) ? trim($opts['custom_login_slug']) : false;
         }
 
