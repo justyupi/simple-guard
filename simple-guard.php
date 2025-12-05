@@ -1,11 +1,13 @@
 <?php
 /*
 Plugin Name: Simple Guard
-Plugin URI: https://github.com/justyupi/wp-guad
+Plugin URI: https://github.com/justyupi/simple-guard
 Description: Fail-ban + Cloudflare Turnstile integration for WordPress login/register/lostpassword.
 Version: 1.0.0
 Author: Kref Studio
 Author URI: https://krefstudio.com
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 6.0
 Tested up to: 6.9
 Text Domain: simple-guard
@@ -148,4 +150,3 @@ if (!class_exists('SG_Main')) {
 }
 
 new SG_Main();
-
